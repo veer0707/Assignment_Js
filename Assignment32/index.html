@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 32</title>
+  </head>
+  <body>
+    <script>
+      let str = prompt("Enter the string");
+
+      capitalize(str);
+
+      function capitalize(str) {
+        let arr = str.split(" ");
+
+        console.log(typeof arr);
+        console.log(arr);
+
+        let str2 = "";
+        for (let item of arr) {
+          // console.log(item[0].toUpperCase());
+          // console.log(item);
+
+          // item = item.toUpperCase();
+          // console.log(item);
+
+          let cap = item.toUpperCase().charAt(0);
+
+          // console.log(cap);
+          // console.log(cap + item.slice(1));
+          // console.log(str3);
+
+          item = cap + item.slice(1);
+          str2 += item + " ";
+        }
+        document.write("The given string is : " + str + "<br><br>");
+        document.write("The processed string is : " + str2);
+      }
+    </script>
+  </body>
+</html>
