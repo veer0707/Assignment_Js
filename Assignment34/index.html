@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 34</title>
+  </head>
+  <body>
+    <script>
+      let str = prompt("Enter the date");
+
+      //   console.log(typeof str.match(/\d+[-/]\d+[-/]\d+/g));
+
+      let str2 = str.match(/\d+[-/]\d+[-/]\d+/g);
+
+      document.write("The given string is : " + str + "<br><br>");
+      document.write("The dates are : ");
+      for (let item of str2) {
+        document.write(item + "<br>");
+      }
+    </script>
+  </body>
+</html>
